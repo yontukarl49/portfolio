@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karl Yontu — Développeur Web & Logiciel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap navbar">
+    <a class="brand" href="#top">KARL.<span>YONTU</span></a>
+    <button id="themeBtn" class="theme-btn" type="button" aria-label="Activer le thème sombre" title="Activer le thème sombre"><span aria-hidden="true">☾</span></button>
+    <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
+    <ul class="navlinks" id="navLinks">
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge">Disponible pour une alternance — dès maintenant</span>
+      <h1>Je construis des applis<br>qui marchent <span class="mark">vraiment.</span></h1>
+      <p class="lede">Karl Yontu — étudiant en Bachelor Informatique à Supinfo Lille. Du script Python au back-end PHP en passant par React, je code des outils complets, pas juste des maquettes.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+        <a class="btn btn-outline" href="#contact">Me contacter</a>
+      </div>
+    </div>
+    <div class="photo-frame">
+      <img src="photo.jpg" alt="Photo de Karl Yontu" id="profilePhoto">
+    </div>
+  </div>
+</header>
+
+<section id="profil" class="wrap">
+  <div class="block">
+    <h2><span class="num">01</span> Profil</h2>
+    <p>Étudiant en Bachelor of Science Informatique à Supinfo Lille, je recherche une alternance disponible immédiatement, rythmée 1 semaine école / 3 semaines entreprise. Passionné par le développement full-stack, j'ai conçu et documenté plusieurs projets autonomes : un système de synchronisation multi-sites, une application PHP/MySQL de gestion de films, et un outil d'analyse RH en Python. Rigoureux et à l'apprentissage rapide, je m'intègre efficacement dans une équipe technique.</p>
+  </div>
+</section>
+
+<section id="competences" class="wrap">
+  <h2><span class="num">02</span> Compétences</h2>
+  <div class="skill-grid">
+    <div class="skill-card">
+      <h3>Front-end</h3>
+      <div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Next.js</span></div>
+    </div>
+    <div class="skill-card">
+      <h3>Back-end & données</h3>
+      <div class="chips"><span class="chip">Python 3</span><span class="chip">Node.js</span><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">API REST</span></div>
+    </div>
+    <div class="skill-card">
+      <h3>Outils & méthodes</h3>
+      <div class="chips"><span class="chip">Git / GitHub</span><span class="chip">Linux CLI</span><span class="chip">Kanban</span><span class="chip">C</span><span class="chip">Java</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="wrap">
+  <h2><span class="num">03</span> Expérience</h2>
+  <div class="tl">
+    <div class="tl-item">
+      <div class="tl-top"><h3>Stage — Application de jeux de casino</h3><span class="tl-date">Juin – Août 2026</span></div>
+      <div class="tl-org">AFAACP (Association Française)</div>
+      <ul>
+        <li>Conception et développement d'une application de jeux en ligne (React, Next.js).</li>
+        <li>Interface utilisateur, composants dynamiques et optimisation des performances.</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-top"><h3>Médiateur Numérique et Technique</h3><span class="tl-date">Sept. 2023 – Mars 2025</span></div>
+      <div class="tl-org">ISTAMA, Cameroun</div>
+      <ul>
+        <li>Présentation des filières informatiques et démonstration de projets numériques aux visiteurs.</li>
+        <li>Accompagnement des futurs étudiants vers les cursus tech, coordination avec les équipes pédagogiques.</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-top"><h3>Stage — Application web de suivi financier</h3><span class="tl-date">Mai – Juil. 2021</span></div>
+      <div class="tl-org">SOPAMAT, Cameroun</div>
+      <ul><li>Tableau de bord interactif (ventes, finances), visualisations dynamiques en HTML/CSS/JS.</li></ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-top"><h3>Support Technique Informatique — Assistance à domicile</h3><span class="tl-date">Juin 2020 – Déc. 2021</span></div>
+      <ul><li>Diagnostic et résolution de pannes logicielles (Windows/Linux), sensibilisation à la sécurité.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="projets" class="wrap">
+  <h2><span class="num">04</span> Projets</h2>
+  <div class="projects">
+    <article class="proj-card">
+      <div class="proj-top"><h3>DAIPRESS Sync</h3><span class="tag-soon">Code bientôt sur GitHub</span></div>
+      <p>Architecture de synchronisation entre plusieurs agences, connectant un logiciel legacy (VB6/MySQL) à une API centrale via un agent Python et une synchronisation temps réel.</p>
+      <div class="chips"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Python</span><span class="chip">MySQL</span><span class="chip">SSE</span><span class="chip">API REST</span></div>
+    </article>
+    <article class="proj-card">
+      <div class="proj-top"><h3>Application d'achat de films</h3></div>
+      <p>Application web full-stack : authentification, gestion d'un catalogue de films, base de données relationnelle et traitement des transactions.</p>
+      <div class="chips"><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">SQL</span><span class="chip">MVC</span><span class="chip">API REST</span></div>
+      <a class="proj-link" href="https://github.com/yontukarl49/App-films" target="_blank" rel="noopener">Voir sur GitHub →</a>
+    </article>
+    <article class="proj-card">
+      <div class="proj-top"><h3>Analyse de données RH</h3></div>
+      <p>Analyse de données RH (effectifs, masse salariale, turnover) : interface CLI enrichie (Rich) et génération de rapports statistiques automatisés.</p>
+      <div class="chips"><span class="chip">Python 3</span><span class="chip">pandas</span><span class="chip">matplotlib</span><span class="chip">numpy</span><span class="chip">Rich</span></div>
+      <a class="proj-link" href="https://github.com/yontukarl49/Rh-APP" target="_blank" rel="noopener">Voir sur GitHub →</a>
+    </article>
+    <article class="proj-card">
+      <div class="proj-top"><h3>ShopNow</h3></div>
+      <p>Application e-commerce pour la vente d'articles, avec catalogue produits et parcours d'achat côté client.</p>
+      <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+      <a class="proj-link" href="https://github.com/yontukarl49/ShopNow" target="_blank" rel="noopener">Voir sur GitHub →</a>
+    </article>
+    <article class="proj-card">
+      <div class="proj-top"><h3>SupBook</h3></div>
+      <p>Bibliothèque numérique permettant de renseigner et consulter des livres.</p>
+      <div class="chips"><span class="chip">JavaScript</span></div>
+      <a class="proj-link" href="https://github.com/yontukarl49/SupBook" target="_blank" rel="noopener">Voir sur GitHub →</a>
+    </article>
+  </div>
+</section>
+
+<section id="formation" class="wrap">
+  <div class="block">
+    <h2><span class="num">05</span> Formation</h2>
+    <div class="edu-item">
+      <div class="tl-top"><h3>Bachelor of Science Informatique — Supinfo, Lille</h3><span class="tl-date">2025 – présent</span></div>
+    </div>
+    <div class="edu-item">
+      <div class="tl-top"><h3>CPGE 2ᵉ année — Polytech Paris-Saclay</h3><span class="tl-date">2024 – 2025</span></div>
+      <p>Mathématiques avancées, informatique (HTML/CSS, algorithmique), électronique, thermodynamique, anglais.</p>
+    </div>
+    <div class="edu-item">
+      <div class="tl-top"><h3>CPGE 1ʳᵉ année — Polytech Paris-Saclay</h3><span class="tl-date">2023 – 2024</span></div>
+      <p>Mathématiques, informatique (Python, C), mécanique, anglais, DAO, microcontrôleur.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" class="wrap">
+  <h2><span class="num">06</span> Contact</h2>
+  <div class="contact-card">
+    <div class="contact-row"><span>Email</span><a href="mailto:karl.yontu@outlook.fr">karl.yontu@outlook.fr</a></div>
+    <div class="contact-row"><span>Téléphone</span><a href="tel:+33780744500">+33 7 80 74 45 00</a></div>
+    <div class="contact-row"><span>Localisation</span><span>Faches-Thumesnil (59) — Lille · Paris</span></div>
+    <div class="contact-row"><span>GitHub</span><a href="https://github.com/yontukarl49" target="_blank" rel="noopener">yontukarl49</a></div>
+    <div class="contact-row"><span>LinkedIn</span><a href="https://linkedin.com/in/karl-yontu4391a5390" target="_blank" rel="noopener">karl-yontu</a></div>
+  </div>
+  <p class="foot-note">Portfolio conçu et codé par Karl Yontu.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
